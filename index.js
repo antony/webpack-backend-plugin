@@ -1,7 +1,7 @@
 module.exports = class RunBackendPlugin {
   constructor (options) {
     const server = options.backend
-    this.entrypoint = server[options.bootstrap]
+    this.entrypoint = server[options.entrypoint]
   }
 
   apply (compiler) {
