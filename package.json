@@ -1,6 +1,6 @@
 {
   "name": "webpack-backend-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Starts servers, apis, and other backends when webpack-dev-server starts",
   "main": "index.js",
   "author": "Antony Jones",
