@@ -4,5 +4,11 @@
   "description": "Starts servers, apis, and other backends when webpack-dev-server starts",
   "main": "index.js",
   "author": "Antony Jones",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1"
+  }
 }

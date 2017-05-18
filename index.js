@@ -1,11 +1,13 @@
 module.exports = class RunBackendPlugin {
   constructor (options) {
-    const server = options.backend
-    this.entrypoint = server[options.entrypoint]
+    this.entrypoint = () => {
+      const server = options.backend
+      return server[options.entrypoint]()
+    }
   }
 
   apply (compiler) {
-    compiler.plugin('done', function() {
+    compiler.plugin('done', () => {
       this.entrypoint()
     })
   }
